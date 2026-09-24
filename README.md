@@ -1,5 +1,5 @@
 # Feeder-Constrained BESS Sizing for EV Fast-Charging Stations — Reproducibility Package
-[![Reproducibility Validation](https://github.com/khainguyentien555/aims-energy-bess-reproducibility/actions/workflows/validate.yml/badge.svg)](https://github.com/khainguyentien555/aims-energy-bess-reproducibility/actions/workflows/validate.yml)
+[![Reproducibility Validation](https://github.com/khainguyentien555/feeder-constrained-bess-sizing/actions/workflows/validate.yml/badge.svg)](https://github.com/khainguyentien555/feeder-constrained-bess-sizing/actions/workflows/validate.yml)
 
 **Code, data, and validated numerical results accompanying the published AIMS Energy article**
 
