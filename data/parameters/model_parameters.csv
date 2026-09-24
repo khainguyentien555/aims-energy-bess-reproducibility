@@ -1,0 +1,22 @@
+parameter,value,unit_or_type,source_lineage
+baseMVA,100,MVA,run_B4P_freeze.m
+baseKV,12.66,kV,run_B4P_freeze.m
+Vslack,1.05,p.u.,run_B4P_freeze.m
+Vthr,0.95,p.u.,run_B4PQ_replay.m / recharge workflow
+Lthr,100,percent,run_B4P_freeze.m
+Pinst,0.15,MW per EVCS,run_B4P_freeze.m
+pfEVCS,0.95,p.u.,run_B4P_freeze.m
+production_BFS_tol,1e-5,p.u.,run_B4P_freeze.m Gate A
+production_BFS_maxIter,50,iterations,run_B4P_freeze.m Gate A
+canonical_BFS_tol,1e-12,p.u.,run_B4P_freeze.m
+canonical_BFS_maxIter,200,iterations,run_B4P_freeze.m
+thermal_feasibility_tol,1e-6,percent,run_B4P_freeze.m
+fmincon_multistarts,16,count,run_B4P_freeze.m
+fmincon_constraint_tol,1e-9,solver tolerance,run_B4P_freeze.m
+fmincon_optimality_tol,1e-9,solver tolerance,run_B4P_freeze.m
+fmincon_step_tol,1e-12,solver tolerance,run_B4P_freeze.m
+eta_dis,0.95,p.u.,run_recharge_replay_v2.m
+eta_ch,0.95,p.u.,run_recharge_replay_v2.m
+T_peak,"2;4;6",hours,run_recharge_replay_v2.m
+alpha_off,"0.50;0.70;0.85;1.00",p.u. background scaling,run_recharge_replay_v2.m
+beta_S,"0.90;1.00;1.10",rating multiplier,run_B4P_rating_sensitivity_v2.m
