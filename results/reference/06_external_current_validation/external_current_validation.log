@@ -1,0 +1,146 @@
+============================================================
+SECOND-REVISION EXTERNAL CURRENT-LIMIT VALIDATION
+MATLAB: 23.2.0.2365128 (R2023b)
+Base: 100.000 MVA, 12.660 kV
+Vslack = 1.050000 pu
+BFS tol = 1.000e-12 pu | maxIter = 200
+Ibase = 4560.428666585 A
+============================================================
+
+=== GATE 0: UNMODIFIED BASE FEEDER ===
+Vmin       = 0.959149369 pu
+Rmax       = 0.998263937
+Icrit      = 199.652787 A
+Ilimit     = 200.000000 A
+CritBranch = 1-2
+BFSres     = 3.672e-13 pu
+Base current-feasible = 1
+
+
+============================================================
+CASE P1/D1
+============================================================
+No BESS     : Rmax=1.136798903 | branch=1-2 | I=227.3598/200.0 A
+Full comp   : Rmax=1.021993127 | branch=1-2 | I=204.3986/200.0 A
+Minimax      : Rmax=1.021993127 | Pdiag=540.000000 kW | branch=1-2 | validStarts=16
+Verdict      : ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE within 0 <= P_BESS <= P_EVCS.
+Fresh replay : Rmax=1.021993127 | Vmin=0.954215378 | BFSres=5.571e-13
+
+============================================================
+CASE P1/D2
+============================================================
+No BESS     : Rmax=1.232261075 | branch=1-2 | I=246.4522/200.0 A
+Full comp   : Rmax=1.038589866 | branch=1-2 | I=207.7180/200.0 A
+Minimax      : Rmax=1.038589866 | Pdiag=900.000000 kW | branch=1-2 | validStarts=16
+Verdict      : ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE within 0 <= P_BESS <= P_EVCS.
+Fresh replay : Rmax=1.038589866 | Vmin=0.950887648 | BFSres=7.544e-13
+
+============================================================
+CASE P1/D3
+============================================================
+No BESS     : Rmax=1.347136942 | branch=8-9 | I=67.3568/50.0 A
+Full comp   : Rmax=1.051432709 | branch=1-2 | I=210.2865/200.0 A
+Minimax      : Rmax=1.051432709 | Pdiag=1170.000000 kW | branch=1-2 | validStarts=16
+Verdict      : ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE within 0 <= P_BESS <= P_EVCS.
+Fresh replay : Rmax=1.051432709 | Vmin=0.948371199 | BFSres=9.593e-13
+
+============================================================
+CASE P1/D4
+============================================================
+No BESS     : Rmax=1.507694335 | branch=8-9 | I=75.3847/50.0 A
+Full comp   : Rmax=1.064606165 | branch=1-2 | I=212.9212/200.0 A
+Minimax      : Rmax=1.064606165 | Pdiag=1440.000000 kW | branch=1-2 | validStarts=16
+Verdict      : ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE within 0 <= P_BESS <= P_EVCS.
+Fresh replay : Rmax=1.064606165 | Vmin=0.945836713 | BFSres=1.000e-13
+
+============================================================
+CASE P2/D1
+============================================================
+No BESS     : Rmax=1.146369884 | branch=1-2 | I=229.2740/200.0 A
+Full comp   : Rmax=1.023515429 | branch=1-2 | I=204.7031/200.0 A
+Minimax      : Rmax=1.023515429 | Pdiag=540.000000 kW | branch=1-2 | validStarts=16
+Verdict      : ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE within 0 <= P_BESS <= P_EVCS.
+Fresh replay : Rmax=1.023515429 | Vmin=0.951593383 | BFSres=7.578e-13
+
+============================================================
+CASE P2/D2
+============================================================
+No BESS     : Rmax=1.379177959 | branch=8-9 | I=68.9589/50.0 A
+Full comp   : Rmax=1.041371976 | branch=1-2 | I=208.2744/200.0 A
+Minimax      : Rmax=1.041371976 | Pdiag=900.000000 kW | branch=1-2 | validStarts=16
+Verdict      : ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE within 0 <= P_BESS <= P_EVCS.
+Fresh replay : Rmax=1.041371976 | Vmin=0.946454525 | BFSres=1.062e-13
+
+============================================================
+CASE P2/D3
+============================================================
+No BESS     : Rmax=1.604493466 | branch=8-9 | I=80.2247/50.0 A
+Full comp   : Rmax=1.055293354 | branch=1-2 | I=211.0587/200.0 A
+Minimax      : Rmax=1.055293354 | Pdiag=1170.000000 kW | branch=1-2 | validStarts=16
+Verdict      : ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE within 0 <= P_BESS <= P_EVCS.
+Fresh replay : Rmax=1.055293354 | Vmin=0.942544915 | BFSres=1.695e-13
+
+============================================================
+CASE P2/D4
+============================================================
+No BESS     : Rmax=1.842732552 | branch=8-9 | I=92.1366/50.0 A
+Full comp   : Rmax=1.069663418 | branch=1-2 | I=213.9327/200.0 A
+Minimax      : Rmax=1.069663418 | Pdiag=1440.000000 kW | branch=1-2 | validStarts=16
+Verdict      : ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE within 0 <= P_BESS <= P_EVCS.
+Fresh replay : Rmax=1.069663418 | Vmin=0.938586242 | BFSres=2.759e-13
+
+============================================================
+EXACT ZERO-STORAGE beta_star AUDIT
+============================================================
+P1/D1   | Lmax0= 92.320254% | beta*=0.923203 | 2-3
+P1/D2   | Lmax0= 99.871842% | beta*=0.998718 | 5-6
+P1/D3   | Lmax0=107.480392% | beta*=1.074804 | 5-6
+P1/D4   | Lmax0=115.244206% | beta*=1.152442 | 5-6
+P2/D1   | Lmax0= 95.067586% | beta*=0.950676 | 2-3
+P2/D2   | Lmax0=106.395774% | beta*=1.063958 | 5-6
+P2/D3   | Lmax0=116.417949% | beta*=1.164179 | 5-6
+P2/D4   | Lmax0=126.871838% | beta*=1.268718 | 5-6
+
+============================================================
+FINAL SUMMARY
+============================================================
+     <strong>Case</strong>      <strong>NoBESS_Rmax</strong>    <strong>NoBESS_critical_branch</strong>    <strong>NoBESS_Icrit_A</strong>    <strong>FullComp_Rmax</strong>    <strong>FullComp_critical_branch</strong>    <strong>Minimax_Rmax</strong>    <strong>Minimax_active_BESS_kW</strong>    <strong>Minimax_critical_branch</strong>    <strong>Current_feasible</strong>    <strong>Minimum_BESS_kW_if_feasible</strong>    <strong>Selected_Rmax</strong>    <strong>Selected_critical_branch</strong>    <strong>Selected_Vmin_pu</strong>    <strong>BFS_residual_pu</strong>    <strong>Minimax_valid_starts</strong>    <strong>Sizing_valid_starts</strong>                         <strong>Status</strong>                     
+    <strong>_______</strong>    <strong>___________</strong>    <strong>______________________</strong>    <strong>______________</strong>    <strong>_____________</strong>    <strong>________________________</strong>    <strong>____________</strong>    <strong>______________________</strong>    <strong>_______________________</strong>    <strong>________________</strong>    <strong>___________________________</strong>    <strong>_____________</strong>    <strong>________________________</strong>    <strong>________________</strong>    <strong>_______________</strong>    <strong>____________________</strong>    <strong>___________________</strong>    <strong>________________________________________________</strong>
+
+    "P1/D1"      1.1368              {'1-2'}                227.36            1.022                {'1-2'}                 1.022                 540                     {'1-2'}                 false                      NaN                    1.022                {'1-2'}                 0.95422           5.5707e-13                16                      0             "ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE"
+    "P1/D2"      1.2323              {'1-2'}                246.45           1.0386                {'1-2'}                1.0386                 900                     {'1-2'}                 false                      NaN                   1.0386                {'1-2'}                 0.95089            7.544e-13                16                      0             "ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE"
+    "P1/D3"      1.3471              {'8-9'}                67.357           1.0514                {'1-2'}                1.0514                1170                     {'1-2'}                 false                      NaN                   1.0514                {'1-2'}                 0.94837            9.593e-13                16                      0             "ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE"
+    "P1/D4"      1.5077              {'8-9'}                75.385           1.0646                {'1-2'}                1.0646                1440                     {'1-2'}                 false                      NaN                   1.0646                {'1-2'}                 0.94584           1.0001e-13                16                      0             "ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE"
+    "P2/D1"      1.1464              {'1-2'}                229.27           1.0235                {'1-2'}                1.0235                 540                     {'1-2'}                 false                      NaN                   1.0235                {'1-2'}                 0.95159           7.5784e-13                16                      0             "ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE"
+    "P2/D2"      1.3792              {'8-9'}                68.959           1.0414                {'1-2'}                1.0414                 900                     {'1-2'}                 false                      NaN                   1.0414                {'1-2'}                 0.94645           1.0617e-13                16                      0             "ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE"
+    "P2/D3"      1.6045              {'8-9'}                80.225           1.0553                {'1-2'}                1.0553                1170                     {'1-2'}                 false                      NaN                   1.0553                {'1-2'}                 0.94254           1.6954e-13                16                      0             "ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE"
+    "P2/D4"      1.8427              {'8-9'}                92.137           1.0697                {'1-2'}                1.0697                1440                     {'1-2'}                 false                      NaN                   1.0697                {'1-2'}                 0.93859           2.7589e-13                16                      0             "ACTIVE-ONLY CURRENT FEASIBILITY NOT ACHIEVABLE"
+
+
+Beta-star audit:
+     <strong>Case</strong>      <strong>Lmax0_pct</strong>    <strong>beta_star</strong>    <strong>critical_branch</strong>    <strong>Storage_required_at_beta090</strong>    <strong>Storage_required_at_beta100</strong>    <strong>Storage_required_at_beta110</strong>
+    <strong>_______</strong>    <strong>_________</strong>    <strong>_________</strong>    <strong>_______________</strong>    <strong>___________________________</strong>    <strong>___________________________</strong>    <strong>___________________________</strong>
+
+    "P1/D1"      92.32        0.9232         {'2-3'}                   true                           false                          false           
+    "P1/D2"     99.872       0.99872         {'5-6'}                   true                           false                          false           
+    "P1/D3"     107.48        1.0748         {'5-6'}                   true                           true                           false           
+    "P1/D4"     115.24        1.1524         {'5-6'}                   true                           true                           true            
+    "P2/D1"     95.068       0.95068         {'2-3'}                   true                           false                          false           
+    "P2/D2"      106.4         1.064         {'5-6'}                   true                           true                           false           
+    "P2/D3"     116.42        1.1642         {'5-6'}                   true                           true                           true            
+    "P2/D4"     126.87        1.2687         {'5-6'}                   true                           true                           true            
+
+
+Saved:
+  external_current_limits.csv
+  external_current_base_check.csv
+  external_current_validation_summary.csv
+  external_current_validation_perbus.csv
+  beta_star_audit.csv
+  nominal_limit_current_equivalents.csv
+  external_current_validation.mat
+  external_current_validation.log
+
+EXTERNAL CURRENT VALIDATION COMPLETED.
+clc
+clear

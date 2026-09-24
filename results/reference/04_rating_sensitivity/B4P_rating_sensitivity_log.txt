@@ -1,0 +1,94 @@
+=== PHASE 6 MATLAB CANONICAL REPLAY v2 ===
+Purpose: local sensitivity of adopted planning-threshold branch ratings.
+ONLY cfg.Smax_branch is scaled.
+Baseline beta=1.00 is a hard gate and is run first.
+
+
+===== beta_S = 1.00 =====
+
+=== CENTRALIZED THERMAL-ONLY B4-P: MATLAB FREEZE ===
+BFS tol = 1.000e-12 pu | loading feasibility tol = 1.000e-06 %
+Case       Ptot_kW        Lmax_%     Lmax-100      BFSres   exitflag    nStarts  objSpr_kW  class
+P1/D1          0.0  92.320253770   -7.680e+00   4.175e-13        NaN          0  0.000e+00  THERMALLY FEASIBLE WITHOUT STORAGE
+P1/D2          0.0  99.871841749   -1.282e-01   2.626e-13        NaN          0  0.000e+00  THERMALLY FEASIBLE WITHOUT STORAGE
+P1/D3        248.5 100.000000000    4.263e-14   9.730e-13          1         16  3.331e-12  THERMAL RESTORATION REQUIRED
+P1/D4        510.1 100.000000000    2.842e-14   5.456e-13          1         16  2.331e-12  THERMAL RESTORATION REQUIRED
+P2/D1          0.0  95.067586461   -4.932e+00   2.248e-13        NaN          0  0.000e+00  THERMALLY FEASIBLE WITHOUT STORAGE
+P2/D2        205.3 100.000000000    2.842e-14   5.283e-13          1         16  2.006e-03  THERMAL RESTORATION REQUIRED
+P2/D3        525.5 100.000000000    7.105e-14   2.729e-13          1         16  1.386e-05  THERMAL RESTORATION REQUIRED
+P2/D4        855.6 100.000000000    7.105e-14   1.982e-13          1         16  9.894e-07  THERMAL RESTORATION REQUIRED
+
+Independent Python comparison targets only (DO NOT force a match):
+P1/D3 ~248.5 | P1/D4 ~510.1 | P2/D2 ~205.3 | P2/D3 ~525.5 | P2/D4 ~855.6 kW
+A material discrepancy must be diagnosed before downstream analysis.
+
+--- BASELINE REPRODUCTION GATE ---
+P1/D1   | dTotal=0 kW | max dAlloc=0 kW
+P1/D2   | dTotal=0 kW | max dAlloc=0 kW
+P1/D3   | dTotal=0 kW | max dAlloc=0 kW
+P1/D4   | dTotal=0 kW | max dAlloc=0 kW
+P2/D1   | dTotal=0 kW | max dAlloc=0 kW
+P2/D2   | dTotal=0 kW | max dAlloc=0 kW
+P2/D3   | dTotal=0 kW | max dAlloc=0 kW
+P2/D4   | dTotal=0 kW | max dAlloc=0 kW
+BASELINE REPRODUCTION beta_S=1.00: PASS
+
+===== beta_S = 0.90 =====
+
+=== CENTRALIZED THERMAL-ONLY B4-P: MATLAB FREEZE ===
+BFS tol = 1.000e-12 pu | loading feasibility tol = 1.000e-06 %
+Case       Ptot_kW        Lmax_%     Lmax-100      BFSres   exitflag    nStarts  objSpr_kW  class
+P1/D1        107.9 100.000000000    2.842e-14   1.526e-13          1         16  2.789e-12  THERMAL RESTORATION REQUIRED
+P1/D2        461.1 100.000000000    0.000e+00   9.133e-14          1         16  1.943e-12  THERMAL RESTORATION REQUIRED
+P1/D3        738.8 100.000000000    4.263e-14   1.076e-13          1         16  2.887e-12  THERMAL RESTORATION REQUIRED
+P1/D4       1019.3 100.000000000    2.842e-14   1.290e-13          1         16  2.887e-12  THERMAL RESTORATION REQUIRED
+P2/D1        231.9 100.000000000    2.842e-14   2.614e-13          1         16  1.132e-05  THERMAL RESTORATION REQUIRED
+P2/D2        668.1 100.000000000    0.000e+00   2.142e-13          1         16  2.776e-12  THERMAL RESTORATION REQUIRED
+P2/D3       1003.0 100.000000000    2.842e-14   2.611e-13          1         16  1.998e-12  THERMAL RESTORATION REQUIRED
+P2/D4       1343.4 100.000000000    2.842e-14   3.463e-13          1         16  2.442e-12  THERMAL RESTORATION REQUIRED
+
+Independent Python comparison targets only (DO NOT force a match):
+P1/D3 ~248.5 | P1/D4 ~510.1 | P2/D2 ~205.3 | P2/D3 ~525.5 | P2/D4 ~855.6 kW
+A material discrepancy must be diagnosed before downstream analysis.
+
+===== beta_S = 1.10 =====
+
+=== CENTRALIZED THERMAL-ONLY B4-P: MATLAB FREEZE ===
+BFS tol = 1.000e-12 pu | loading feasibility tol = 1.000e-06 %
+Case       Ptot_kW        Lmax_%     Lmax-100      BFSres   exitflag    nStarts  objSpr_kW  class
+P1/D1          0.0  83.927503427   -1.607e+01   4.175e-13        NaN          0  0.000e+00  THERMALLY FEASIBLE WITHOUT STORAGE
+P1/D2          0.0  90.792583408   -9.207e+00   2.626e-13        NaN          0  0.000e+00  THERMALLY FEASIBLE WITHOUT STORAGE
+P1/D3          0.0  97.709446839   -2.291e+00   1.251e-13        NaN          0  0.000e+00  THERMALLY FEASIBLE WITHOUT STORAGE
+P1/D4        165.2 100.000000000    2.842e-14   7.669e-13          1         16  7.761e-04  THERMAL RESTORATION REQUIRED
+P2/D1          0.0  86.425078601   -1.357e+01   2.248e-13        NaN          0  0.000e+00  THERMALLY FEASIBLE WITHOUT STORAGE
+P2/D2          0.0  96.723430993   -3.277e+00   5.540e-13        NaN          0  0.000e+00  THERMALLY FEASIBLE WITHOUT STORAGE
+P2/D3        193.9 100.000000000    0.000e+00   6.405e-13          1         16  7.913e-03  THERMAL RESTORATION REQUIRED
+P2/D4        506.7 100.000000000    2.842e-14   2.816e-13          1         16  1.343e-04  THERMAL RESTORATION REQUIRED
+
+Independent Python comparison targets only (DO NOT force a match):
+P1/D3 ~248.5 | P1/D4 ~510.1 | P2/D2 ~205.3 | P2/D3 ~525.5 | P2/D4 ~855.6 kW
+A material discrepancy must be diagnosed before downstream analysis.
+
+Cross-beta total-BESS monotonicity: PASS
+
+=== COMPACT SENSITIVITY SUMMARY ===
+     <strong>Cases</strong>      <strong>P090</strong>      <strong>P100</strong>      <strong>P110</strong>     <strong>Required_090</strong>    <strong>Required_100</strong>    <strong>Required_110</strong>    <strong>DeltaP_090_kW</strong>    <strong>DeltaP_110_kW</strong>    <strong>Pct_090</strong>    <strong>Pct_110</strong>
+    <strong>_______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>____________</strong>    <strong>____________</strong>    <strong>____________</strong>    <strong>_____________</strong>    <strong>_____________</strong>    <strong>_______</strong>    <strong>_______</strong>
+
+    "P1/D1"    107.95         0         0       true            false           false           107.95                 0          NaN         NaN
+    "P1/D2"    461.12         0         0       true            false           false           461.12                 0          NaN         NaN
+    "P1/D3"     738.8    248.53         0       true            true            false           490.26           -248.53       197.26        -100
+    "P1/D4"    1019.3    510.09    165.24       true            true            true             509.2           -344.85       99.826     -67.606
+    "P2/D1"    231.92         0         0       true            false           false           231.92                 0          NaN         NaN
+    "P2/D2"    668.14    205.34         0       true            true            false            462.8           -205.34       225.38        -100
+    "P2/D3"      1003    525.47    193.87       true            true            true            477.55           -331.61        90.88     -63.106
+    "P2/D4"    1343.4    855.56    506.69       true            true            true            487.79           -348.87       57.015     -40.776
+
+Saved canonical Phase-6 artifacts:
+  B4P_rating_sensitivity_canonical.mat
+  B4P_rating_sensitivity_log.txt
+  B4P_rating_sensitivity_MATLAB.csv
+  B4P_rating_sensitivity_perbus_MATLAB.csv
+  B4P_rating_sensitivity_compact_MATLAB.csv
+
+PHASE 6 MATLAB REPLAY: PASS IF SCRIPT REACHES THIS LINE WITHOUT ERROR.

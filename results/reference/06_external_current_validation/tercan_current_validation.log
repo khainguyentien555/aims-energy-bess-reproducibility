@@ -1,0 +1,171 @@
+============================================================
+TERCAN EXTERNAL CURRENT-LIMIT VALIDATION
+MATLAB: 23.2.0.2365128 (R2023b)
+Base: 100.000 MVA, 12.660 kV
+Vslack = 1.050000 pu
+BFS tol = 1.000e-12 pu | maxIter = 200
+Ibase = 4560.428666585 A
+
+Published external current limits:
+  Branches 1-5  = 275 A
+  Branches 6-32 = 120 A
+
+Nominal-voltage equivalents at 12.66 kV:
+  275.0 A -> 6.030135 MVA
+  120.0 A -> 2.631332 MVA
+============================================================
+
+=== GATE 0: UNMODIFIED BASE FEEDER ===
+Vmin       = 0.959149369 pu
+Rmax       = 0.726010136
+Icrit      = 199.652787 A
+Ilimit     = 275.000000 A
+CritBranch = 1-2
+BFSres     = 3.672e-13 pu
+Base current-feasible = 1
+
+
+============================================================
+CASE P1/D1
+============================================================
+No BESS     : Rmax=0.826762839 | branch=1-2 | I=227.3598/275.0 A
+Full comp   : Rmax=0.743267729 | branch=1-2 | I=204.3986/275.0 A
+Minimax     : Rmax=0.743267729 | Pdiag=540.000000 kW | branch=1-2 | validStarts=16 | spread=1.110e-16
+Sizing      : P=0.000000 kW | Rmax=0.826762839 | branch=1-2 | validStarts=16 | objSpread=0.000000e+00 kW
+Fresh replay: Rmax=0.826762839 | Vmin=0.934236029 | BFSres=4.175e-13
+
+============================================================
+CASE P1/D2
+============================================================
+No BESS     : Rmax=0.896189873 | branch=1-2 | I=246.4522/275.0 A
+Full comp   : Rmax=0.755338085 | branch=1-2 | I=207.7180/275.0 A
+Minimax     : Rmax=0.755338085 | Pdiag=900.000000 kW | branch=1-2 | validStarts=16 | spread=0.000e+00
+Sizing      : P=0.000000 kW | Rmax=0.896189873 | branch=1-2 | validStarts=16 | objSpread=0.000000e+00 kW
+Fresh replay: Rmax=0.896189873 | Vmin=0.916917029 | BFSres=2.626e-13
+
+============================================================
+CASE P1/D3
+============================================================
+No BESS     : Rmax=0.949526123 | branch=1-2 | I=261.1197/275.0 A
+Full comp   : Rmax=0.764678334 | branch=1-2 | I=210.2865/275.0 A
+Minimax     : Rmax=0.764678334 | Pdiag=1170.000000 kW | branch=1-2 | validStarts=16 | spread=3.331e-16
+Sizing      : P=0.000000 kW | Rmax=0.949526123 | branch=1-2 | validStarts=16 | objSpread=0.000000e+00 kW
+Fresh replay: Rmax=0.949526123 | Vmin=0.903510642 | BFSres=1.251e-13
+
+============================================================
+CASE P1/D4
+============================================================
+No BESS     : Rmax=1.004019352 | branch=1-2 | I=276.1053/275.0 A
+Full comp   : Rmax=0.774259029 | branch=1-2 | I=212.9212/275.0 A
+Minimax     : Rmax=0.774259029 | Pdiag=1440.000000 kW | branch=1-2 | validStarts=16 | spread=0.000e+00
+Sizing      : P=20.245228 kW | Rmax=1.000000000 | branch=1-2 | validStarts=16 | objSpread=3.011480e-12 kW
+Fresh replay: Rmax=1.000000000 | Vmin=0.891673764 | BFSres=4.236e-13
+
+============================================================
+CASE P2/D1
+============================================================
+No BESS     : Rmax=0.833723552 | branch=1-2 | I=229.2740/275.0 A
+Full comp   : Rmax=0.744374858 | branch=1-2 | I=204.7031/275.0 A
+Minimax     : Rmax=0.744374858 | Pdiag=540.000000 kW | branch=1-2 | validStarts=16 | spread=0.000e+00
+Sizing      : P=0.000000 kW | Rmax=0.833723552 | branch=1-2 | validStarts=16 | objSpread=0.000000e+00 kW
+Fresh replay: Rmax=0.833723552 | Vmin=0.921202716 | BFSres=2.248e-13
+
+============================================================
+CASE P2/D2
+============================================================
+No BESS     : Rmax=0.910390768 | branch=1-2 | I=250.3575/275.0 A
+Full comp   : Rmax=0.757361437 | branch=1-2 | I=208.2744/275.0 A
+Minimax     : Rmax=0.757361437 | Pdiag=900.000000 kW | branch=1-2 | validStarts=16 | spread=1.110e-16
+Sizing      : P=0.000000 kW | Rmax=0.910390768 | branch=1-2 | validStarts=16 | objSpread=0.000000e+00 kW
+Fresh replay: Rmax=0.910390768 | Vmin=0.894006144 | BFSres=5.540e-13
+
+============================================================
+CASE P2/D3
+============================================================
+No BESS     : Rmax=0.970889176 | branch=1-2 | I=266.9945/275.0 A
+Full comp   : Rmax=0.767486076 | branch=1-2 | I=211.0587/275.0 A
+Minimax     : Rmax=0.767486076 | Pdiag=1170.000000 kW | branch=1-2 | validStarts=16 | spread=0.000e+00
+Sizing      : P=0.000000 kW | Rmax=0.970889176 | branch=1-2 | validStarts=16 | objSpread=0.000000e+00 kW
+Fresh replay: Rmax=0.970889176 | Vmin=0.872397177 | BFSres=7.918e-13
+
+============================================================
+CASE P2/D4
+============================================================
+No BESS     : Rmax=1.034373178 | branch=1-2 | I=284.4526/275.0 A
+Full comp   : Rmax=0.777937031 | branch=1-2 | I=213.9327/275.0 A
+Minimax     : Rmax=0.777937031 | Pdiag=1440.000000 kW | branch=1-2 | validStarts=16 | spread=0.000e+00
+Sizing      : P=158.529837 kW | Rmax=1.000000000 | branch=1-2 | validStarts=16 | objSpread=3.580469e-12 kW
+Fresh replay: Rmax=1.000000000 | Vmin=0.866434659 | BFSres=2.102e-13
+
+============================================================
+FINAL TERCAN VALIDATION SUMMARY
+============================================================
+     <strong>Case</strong>      <strong>NoBESS_Rmax</strong>    <strong>NoBESS_critical_branch</strong>    <strong>NoBESS_Icrit_A</strong>    <strong>NoBESS_Ilimit_A</strong>    <strong>FullComp_Rmax</strong>    <strong>FullComp_critical_branch</strong>    <strong>FullComp_Icrit_A</strong>    <strong>FullComp_Ilimit_A</strong>    <strong>Minimax_Rmax</strong>    <strong>Minimax_active_BESS_kW</strong>    <strong>Minimax_critical_branch</strong>    <strong>Minimax_valid_starts</strong>    <strong>Minimax_Rspread</strong>    <strong>Current_feasible</strong>    <strong>Minimum_BESS_kW_if_feasible</strong>    <strong>Selected_Rmax</strong>    <strong>Selected_critical_branch</strong>    <strong>Selected_Vmin_pu</strong>    <strong>BFS_residual_pu</strong>    <strong>Sizing_valid_starts</strong>    <strong>Sizing_objective_spread_kW</strong>                     <strong>Status</strong>                 
+    <strong>_______</strong>    <strong>___________</strong>    <strong>______________________</strong>    <strong>______________</strong>    <strong>_______________</strong>    <strong>_____________</strong>    <strong>________________________</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>____________</strong>    <strong>______________________</strong>    <strong>_______________________</strong>    <strong>____________________</strong>    <strong>_______________</strong>    <strong>________________</strong>    <strong>___________________________</strong>    <strong>_____________</strong>    <strong>________________________</strong>    <strong>________________</strong>    <strong>_______________</strong>    <strong>___________________</strong>    <strong>__________________________</strong>    <strong>________________________________________</strong>
+
+    "P1/D1"      0.82676             {'1-2'}                227.36              275             0.74327               {'1-2'}                   204.4                275             0.74327                 540                     {'1-2'}                     16               1.1102e-16            true                          0                  0.82676               {'1-2'}                 0.93424           4.1746e-13               16                              0            "CURRENT-FEASIBLE WITH ACTIVE-ONLY BESS"
+    "P1/D2"      0.89619             {'1-2'}                246.45              275             0.75534               {'1-2'}                  207.72                275             0.75534                 900                     {'1-2'}                     16                        0            true                          0                  0.89619               {'1-2'}                 0.91692           2.6264e-13               16                              0            "CURRENT-FEASIBLE WITH ACTIVE-ONLY BESS"
+    "P1/D3"      0.94953             {'1-2'}                261.12              275             0.76468               {'1-2'}                  210.29                275             0.76468                1170                     {'1-2'}                     16               3.3307e-16            true                          0                  0.94953               {'1-2'}                 0.90351           1.2508e-13               16                              0            "CURRENT-FEASIBLE WITH ACTIVE-ONLY BESS"
+    "P1/D4"        1.004             {'1-2'}                276.11              275             0.77426               {'1-2'}                  212.92                275             0.77426                1440                     {'1-2'}                     16                        0            true                     20.245                        1               {'1-2'}                 0.89167           4.2364e-13               16                     3.0115e-12            "CURRENT-FEASIBLE WITH ACTIVE-ONLY BESS"
+    "P2/D1"      0.83372             {'1-2'}                229.27              275             0.74437               {'1-2'}                   204.7                275             0.74437                 540                     {'1-2'}                     16                        0            true                          0                  0.83372               {'1-2'}                  0.9212           2.2475e-13               16                              0            "CURRENT-FEASIBLE WITH ACTIVE-ONLY BESS"
+    "P2/D2"      0.91039             {'1-2'}                250.36              275             0.75736               {'1-2'}                  208.27                275             0.75736                 900                     {'1-2'}                     16               1.1102e-16            true                          0                  0.91039               {'1-2'}                 0.89401           5.5401e-13               16                              0            "CURRENT-FEASIBLE WITH ACTIVE-ONLY BESS"
+    "P2/D3"      0.97089             {'1-2'}                266.99              275             0.76749               {'1-2'}                  211.06                275             0.76749                1170                     {'1-2'}                     16                        0            true                          0                  0.97089               {'1-2'}                  0.8724           7.9183e-13               16                              0            "CURRENT-FEASIBLE WITH ACTIVE-ONLY BESS"
+    "P2/D4"       1.0344             {'1-2'}                284.45              275             0.77794               {'1-2'}                  213.93                275             0.77794                1440                     {'1-2'}                     16                        0            true                     158.53                        1               {'1-2'}                 0.86643           2.1023e-13               16                     3.5805e-12            "CURRENT-FEASIBLE WITH ACTIVE-ONLY BESS"
+
+
+Published limit set:
+    <strong>Branch</strong>    <strong>FromBus</strong>    <strong>ToBus</strong>    <strong>Imax_A</strong>
+    <strong>______</strong>    <strong>_______</strong>    <strong>_____</strong>    <strong>______</strong>
+
+       1         1         2       275  
+       2         2         3       275  
+       3         3         4       275  
+       4         4         5       275  
+       5         5         6       275  
+       6         6         7       120  
+       7         7         8       120  
+       8         8         9       120  
+       9         9        10       120  
+      10        10        11       120  
+      11        11        12       120  
+      12        12        13       120  
+      13        13        14       120  
+      14        14        15       120  
+      15        15        16       120  
+      16        16        17       120  
+      17        17        18       120  
+      18         2        19       120  
+      19        19        20       120  
+      20        20        21       120  
+      21        21        22       120  
+      22         3        23       120  
+      23        23        24       120  
+      24        24        25       120  
+      25         6        26       120  
+      26        26        27       120  
+      27        27        28       120  
+      28        28        29       120  
+      29        29        30       120  
+      30        30        31       120  
+      31        31        32       120  
+      32        32        33       120  
+
+
+Nominal-voltage MVA equivalents:
+    <strong>Published_current_limit_A</strong>    <strong>Nominal_voltage_MVA_equivalent</strong>
+    <strong>_________________________</strong>    <strong>______________________________</strong>
+
+               275                           6.0301            
+               120                           2.6313            
+
+
+Saved:
+  tercan_current_limits.csv
+  tercan_current_limit_nominal_MVA_equivalent.csv
+  tercan_current_base_check.csv
+  tercan_current_validation_summary.csv
+  tercan_current_validation_perbus.csv
+  tercan_current_validation.mat
+  tercan_current_validation.log
+
+TERCAN CURRENT VALIDATION COMPLETED.

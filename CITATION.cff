@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated AIMS Energy article."
+title: "Reproducibility package for: Feeder-constrained co-located BESS sizing for grid-interactive EV fast-charging stations: Branch-loading relief, voltage support, and recharge deliverability"
+type: software
+authors:
+  - family-names: "Le"
+    given-names: "Thi-Minh-Chau"
+  - family-names: "Nguyen"
+    given-names: "Tien-Khai"
+  - family-names: "Le"
+    given-names: "Trong-Nghia"
+version: 1.0.2
+date-released: 2026-09-24
+repository-code: "https://github.com/khainguyentien555/aims-energy-bess-reproducibility"
+url: "https://github.com/khainguyentien555/aims-energy-bess-reproducibility"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Le"
+      given-names: "Thi-Minh-Chau"
+    - family-names: "Nguyen"
+      given-names: "Tien-Khai"
+    - family-names: "Le"
+      given-names: "Trong-Nghia"
+  title: "Feeder-constrained co-located BESS sizing for grid-interactive EV fast-charging stations: Branch-loading relief, voltage support, and recharge deliverability"
+  journal: "AIMS Energy"
+  year: 2026
+  volume: 14
+  issue: 5
+  start: 1033
+  end: 1058
+  doi: "10.3934/energy.2026042"
+  url: "https://doi.org/10.3934/energy.2026042"

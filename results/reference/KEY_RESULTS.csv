@@ -1,0 +1,17 @@
+claim,value,unit,source_file
+Nominal BESS P1/D1,0.00,kW,01_branch_loading/B4P_FULL_freeze_summary.csv
+Nominal BESS P1/D2,0.00,kW,01_branch_loading/B4P_FULL_freeze_summary.csv
+Nominal BESS P1/D3,248.534779,kW,01_branch_loading/B4P_FULL_freeze_summary.csv
+Nominal BESS P1/D4,510.087115,kW,01_branch_loading/B4P_FULL_freeze_summary.csv
+Nominal BESS P2/D1,0.00,kW,01_branch_loading/B4P_FULL_freeze_summary.csv
+Nominal BESS P2/D2,205.343322,kW,01_branch_loading/B4P_FULL_freeze_summary.csv
+Nominal BESS P2/D3,525.473397,kW,01_branch_loading/B4P_FULL_freeze_summary.csv
+Nominal BESS P2/D4,855.558619,kW,01_branch_loading/B4P_FULL_freeze_summary.csv
+Minimum additional Q support,114.770667,kVAr,02_voltage_pcs/B4PQ_summary.csv
+Maximum additional Q support,879.938422,kVAr,02_voltage_pcs/B4PQ_summary.csv
+Minimum sequential excess,0.071679,percent,05_order_audit/Table5a_order_sensitivity_FINAL.csv
+Maximum sequential excess,96.685956,percent,05_order_audit/Table5a_order_sensitivity_FINAL.csv
+4h recharge active-rating floor,4.432133,hours,03_recharge/recharge_matrix_MATLAB.csv
+Maximum 4h recharge duration,31.192192,hours,03_recharge/recharge_matrix_MATLAB.csv
+Tercan P1/D4 minimum active BESS,20.245228,kW,06_external_current_validation/tercan_current_validation_summary.csv
+Tercan P2/D4 minimum active BESS,158.529837,kW,06_external_current_validation/tercan_current_validation_summary.csv

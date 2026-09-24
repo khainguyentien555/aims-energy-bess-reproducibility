@@ -1,0 +1,85 @@
+=== PHASE 3 (Option B) MATLAB REPLAY ===
+Frozen B4-P allocations are immutable inputs.
+BFS tol = 1.000e-12 pu | Vthr = 0.950000 pu | tauV = 1.0e-09 pu | tauL = 1.0e-06 %
+
+P1/D1   | Vpre=0.934236 Lupre=92.320254% | Vupf=0.939293 PFok=0 | mono=1 delta*=2.165256 | Q_PFC=177.489 Q_add=384.310 kVAr | Vpost=0.950000000 Lpost=87.121664% limBus=18 BFSres=1.549e-13
+P1/D2   | Vpre=0.916917 Lupre=99.871842% | Vupf=0.925541 PFok=0 | mono=1 delta*=2.974617 | Q_PFC=295.816 Q_add=879.938 kVAr | Vpost=0.950000000 Lpost=90.120474% limBus=18 BFSres=5.726e-13
+P1/D3   | Vpre=0.924839 Lupre=100.000000% | Vupf=0.935937 PFok=0 | mono=1 delta*=1.313737 | Q_PFC=384.560 Q_add=505.211 kVAr | Vpost=0.950000001 Lpost=91.813317% limBus=18 BFSres=2.094e-13
+P1/D4   | Vpre=0.929200 Lupre=100.000000% | Vupf=0.942787 PFok=0 | mono=1 delta*=0.546866 | Q_PFC=473.305 Q_add=258.835 kVAr | Vpost=0.950000000 Lpost=92.740695% limBus=18 BFSres=1.167e-13
+P2/D1   | Vpre=0.921203 Lupre=95.067586% | Vupf=0.929058 PFok=0 | mono=1 delta*=2.792659 | Q_PFC=177.489 Q_add=495.667 kVAr | Vpost=0.950000000 Lpost=87.678765% limBus=18 BFSres=5.234e-13
+P2/D2   | Vpre=0.913091 Lupre=100.000000% | Vupf=0.926346 PFok=0 | mono=1 delta*=1.894457 | Q_PFC=295.816 Q_add=560.410 kVAr | Vpost=0.950000000 Lpost=90.493776% limBus=18 BFSres=7.955e-13
+P2/D3   | Vpre=0.919490 Lupre=100.000000% | Vupf=0.936594 PFok=0 | mono=1 delta*=0.823064 | Q_PFC=384.560 Q_add=316.518 kVAr | Vpost=0.950000001 Lpost=91.412229% limBus=18 BFSres=3.408e-13
+P2/D4   | Vpre=0.924174 Lupre=100.000000% | Vupf=0.945124 PFok=0 | mono=1 delta*=0.242488 | Q_PFC=473.305 Q_add=114.771 kVAr | Vpost=0.950000001 Lpost=92.129012% limBus=18 BFSres=2.503e-13
+     <strong>Case</strong>      <strong>P_BESS_total_kW</strong>    <strong>Vmin_B4P_pu</strong>    <strong>Lmax_B4P_pct</strong>    <strong>Vmin_unityPF_pu</strong>    <strong>Lmax_unityPF_pct</strong>    <strong>PF_sufficient</strong>    <strong>Q_PFC_kVAr</strong>    <strong>delta_star</strong>    <strong>Q_add_total_kVAr</strong>    <strong>Vmin_post_pu</strong>    <strong>Lmax_post_pct</strong>    <strong>limiting_bus</strong>    <strong>BFS_residual_pu</strong>    <strong>monotone</strong>
+    <strong>_______</strong>    <strong>_______________</strong>    <strong>___________</strong>    <strong>____________</strong>    <strong>_______________</strong>    <strong>________________</strong>    <strong>_____________</strong>    <strong>__________</strong>    <strong>__________</strong>    <strong>________________</strong>    <strong>____________</strong>    <strong>_____________</strong>    <strong>____________</strong>    <strong>_______________</strong>    <strong>________</strong>
+
+    "P1/D1"             0           0.93424          92.32           0.93929              90.56             false          177.49        2.1653           384.31             0.95           87.122             18           1.5487e-13        true   
+    "P1/D2"             0           0.91692         99.872           0.92554               96.9             false          295.82        2.9746           879.94             0.95            90.12             18           5.7263e-13        true   
+    "P1/D3"        248.53           0.92484            100           0.93594             96.035             false          384.56        1.3137           505.21             0.95           91.813             18           2.0943e-13        true   
+    "P1/D4"        510.09            0.9292            100           0.94279             95.019             false          473.31       0.54687           258.83             0.95           92.741             18           1.1674e-13        true   
+    "P2/D1"             0            0.9212         95.068           0.92906             92.862             false          177.49        2.7927           495.67             0.95           87.679             18           5.2343e-13        true   
+    "P2/D2"        205.34           0.91309            100           0.92635             96.123             false          295.82        1.8945           560.41             0.95           90.494             18           7.9555e-13        true   
+    "P2/D3"        525.47           0.91949            100           0.93659             94.827             false          384.56       0.82306           316.52             0.95           91.412             18           3.4076e-13        true   
+    "P2/D4"        855.56           0.92417            100           0.94512             93.441             false          473.31       0.24249           114.77             0.95           92.129             18           2.5032e-13        true   
+
+
+--- Per-bus Q_add attribution + conditional PCS rating ---
+Case     bus  P_BESS_kW  Q_add_kVAr   Sreq_kVA  headroom%  source
+P1/D1      6      0.000      64.052         --         --  External/local reactive resource
+P1/D1     10      0.000      64.052         --         --  External/local reactive resource
+P1/D1     14      0.000      64.052         --         --  External/local reactive resource
+P1/D1     18      0.000      64.052         --         --  External/local reactive resource
+P1/D1     22      0.000      64.052         --         --  External/local reactive resource
+P1/D1     26      0.000      64.052         --         --  External/local reactive resource
+P1/D2      6      0.000     146.656         --         --  External/local reactive resource
+P1/D2     10      0.000     146.656         --         --  External/local reactive resource
+P1/D2     14      0.000     146.656         --         --  External/local reactive resource
+P1/D2     18      0.000     146.656         --         --  External/local reactive resource
+P1/D2     22      0.000     146.656         --         --  External/local reactive resource
+P1/D2     26      0.000     146.656         --         --  External/local reactive resource
+P1/D3      6      0.000      84.202         --         --  External/local reactive resource
+P1/D3     10      0.000      84.202         --         --  External/local reactive resource
+P1/D3     14     53.535      84.202     99.779     86.382  BESS PCS candidate (if selected)
+P1/D3     18    195.000      84.202    212.403      8.925  BESS PCS candidate (if selected)
+P1/D3     22      0.000      84.202         --         --  External/local reactive resource
+P1/D3     26      0.000      84.202         --         --  External/local reactive resource
+P1/D4      6      0.000      43.139         --         --  External/local reactive resource
+P1/D4     10     30.087      43.139     52.595     74.808  BESS PCS candidate (if selected)
+P1/D4     14    240.000      43.139    243.846      1.603  BESS PCS candidate (if selected)
+P1/D4     18    240.000      43.139    243.846      1.603  BESS PCS candidate (if selected)
+P1/D4     22      0.000      43.139         --         --  External/local reactive resource
+P1/D4     26      0.000      43.139         --         --  External/local reactive resource
+P2/D1     14      0.000      82.611         --         --  External/local reactive resource
+P2/D1     16      0.000      82.611         --         --  External/local reactive resource
+P2/D1     17      0.000      82.611         --         --  External/local reactive resource
+P2/D1     18      0.000      82.611         --         --  External/local reactive resource
+P2/D1     30      0.000      82.611         --         --  External/local reactive resource
+P2/D1     33      0.000      82.611         --         --  External/local reactive resource
+P2/D2     14      0.000      93.402         --         --  External/local reactive resource
+P2/D2     16      0.000      93.402         --         --  External/local reactive resource
+P2/D2     17     55.343      93.402    108.567     96.170  BESS PCS candidate (if selected)
+P2/D2     18    150.000      93.402    176.703     17.802  BESS PCS candidate (if selected)
+P2/D2     30      0.000      93.402         --         --  External/local reactive resource
+P2/D2     33      0.000      93.402         --         --  External/local reactive resource
+P2/D3     14      0.000      52.753         --         --  External/local reactive resource
+P2/D3     16    135.473      52.753    145.382      7.314  BESS PCS candidate (if selected)
+P2/D3     17    195.000      52.753    202.010      3.595  BESS PCS candidate (if selected)
+P2/D3     18    195.000      52.753    202.010      3.595  BESS PCS candidate (if selected)
+P2/D3     30      0.000      52.753         --         --  External/local reactive resource
+P2/D3     33      0.000      52.753         --         --  External/local reactive resource
+P2/D4     14    135.559      19.128    136.902      0.991  BESS PCS candidate (if selected)
+P2/D4     16    240.000      19.128    240.761      0.317  BESS PCS candidate (if selected)
+P2/D4     17    240.000      19.128    240.761      0.317  BESS PCS candidate (if selected)
+P2/D4     18    240.000      19.128    240.761      0.317  BESS PCS candidate (if selected)
+P2/D4     30      0.000      19.128         --         --  External/local reactive resource
+P2/D4     33      0.000      19.128         --         --  External/local reactive resource
+
+Saved:
+  B4PQ_canonical.mat
+  B4PQ_replay_log.txt
+  B4PQ_summary.csv
+  B4PQ_per_bus_PCS.csv
+
+Python cross-checks are comparison targets only; MATLAB is not forced to match.
+clc
+clear

@@ -1,0 +1,37 @@
+
+Canonical BFS tol = 1.000e-12 pu
+Thermal feasibility tolerance = 1.000e-06 %
+
+=== CENTRALIZED THERMAL-ONLY B4-P: MATLAB FREEZE ===
+BFS tol = 1.000e-12 pu | loading feasibility tol = 1.000e-06 %
+Case       Ptot_kW        Lmax_%     Lmax-100      BFSres   exitflag    nStarts  objSpr_kW  class
+P1/D1          0.0  92.320253770   -7.680e+00   4.175e-13        NaN          0  0.000e+00  THERMALLY FEASIBLE WITHOUT STORAGE
+P1/D2          0.0  99.871841749   -1.282e-01   2.626e-13        NaN          0  0.000e+00  THERMALLY FEASIBLE WITHOUT STORAGE
+P1/D3        248.5 100.000000000    4.263e-14   9.730e-13          1         16  3.331e-12  THERMAL RESTORATION REQUIRED
+P1/D4        510.1 100.000000000    2.842e-14   5.456e-13          1         16  2.331e-12  THERMAL RESTORATION REQUIRED
+P2/D1          0.0  95.067586461   -4.932e+00   2.248e-13        NaN          0  0.000e+00  THERMALLY FEASIBLE WITHOUT STORAGE
+P2/D2        205.3 100.000000000    2.842e-14   5.283e-13          1         16  2.006e-03  THERMAL RESTORATION REQUIRED
+P2/D3        525.5 100.000000000    7.105e-14   2.729e-13          1         16  1.386e-05  THERMAL RESTORATION REQUIRED
+P2/D4        855.6 100.000000000    7.105e-14   1.982e-13          1         16  9.894e-07  THERMAL RESTORATION REQUIRED
+
+Independent Python comparison targets only (DO NOT force a match):
+P1/D3 ~248.5 | P1/D4 ~510.1 | P2/D2 ~205.3 | P2/D3 ~525.5 | P2/D4 ~855.6 kW
+A material discrepancy must be diagnosed before downstream analysis.
+     <strong>Case</strong>      <strong>P_BESS_total_kW</strong>    <strong>Lmax_pct</strong>    <strong>loadingResidual_pct</strong>    <strong>Vmin_pu</strong>    <strong>BFS_residual_pu</strong>    <strong>BFS_iters</strong>    <strong>exitflag</strong>    <strong>firstorderopt</strong>    <strong>fminconConstrViolation</strong>    <strong>iterations</strong>    <strong>funcCount</strong>    <strong>nValidStarts</strong>    <strong>objSpread_kW</strong>    <strong>allocSpread_kW</strong>    <strong>critFrom</strong>    <strong>critTo</strong>                   <strong>Class</strong>                
+    <strong>_______</strong>    <strong>_______________</strong>    <strong>________</strong>    <strong>___________________</strong>    <strong>_______</strong>    <strong>_______________</strong>    <strong>_________</strong>    <strong>________</strong>    <strong>_____________</strong>    <strong>______________________</strong>    <strong>__________</strong>    <strong>_________</strong>    <strong>____________</strong>    <strong>____________</strong>    <strong>______________</strong>    <strong>________</strong>    <strong>______</strong>    <strong>____________________________________</strong>
+
+    "P1/D1"             0           92.32            -7.6797         0.93424      4.1746e-13          12          NaN               NaN                   NaN               0             0             0                   0                0         2          3       "THERMALLY FEASIBLE WITHOUT STORAGE"
+    "P1/D2"             0          99.872           -0.12816         0.91692      2.6264e-13          13          NaN               NaN                   NaN               0             0             0                   0                0         5          6       "THERMALLY FEASIBLE WITHOUT STORAGE"
+    "P1/D3"        248.53             100         4.2633e-14         0.92484      9.7303e-13          12            1        1.4882e-15            4.2633e-14               5            40            16          3.3307e-12       3.3307e-12         5          6       "THERMAL RESTORATION REQUIRED"      
+    "P1/D4"        510.09             100         2.8422e-14          0.9292      5.4563e-13          12            1        1.0521e-15            2.8422e-14               7            56            16          2.3315e-12       2.3627e-12         5          6       "THERMAL RESTORATION REQUIRED"      
+    "P2/D1"             0          95.068            -4.9324          0.9212      2.2475e-13          13          NaN               NaN                   NaN               0             0             0                   0                0         2          3       "THERMALLY FEASIBLE WITHOUT STORAGE"
+    "P2/D2"        205.34             100         2.8422e-14         0.91309      5.2834e-13          13            1        9.4662e-16            2.8422e-14              12           103            16           0.0020062         0.018936         5          6       "THERMAL RESTORATION REQUIRED"      
+    "P2/D3"        525.47             100         7.1054e-14         0.91949      2.7292e-13          13            1        2.4928e-15            7.1054e-14               7            63            16          1.3861e-05        0.0015355         5          6       "THERMAL RESTORATION REQUIRED"      
+    "P2/D4"        855.56             100         7.1054e-14         0.92417      1.9822e-13          13            1         2.622e-15            7.1054e-14               9            72            16          9.8935e-07       1.8736e-06         5          6       "THERMAL RESTORATION REQUIRED"      
+
+
+Saved:
+  B4P_canonical_freeze.mat
+  B4P_FULL_freeze_log.txt
+  B4P_FULL_freeze_summary.csv
+  B4P_FULL_allocations.txt
