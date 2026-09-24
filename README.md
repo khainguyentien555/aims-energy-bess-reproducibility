@@ -1,6 +1,5 @@
-# Reproducibility package — AIMS Energy
-
-[![Validate reproducibility package](https://github.com/khainguyentien555/aims-energy-bess-reproducibility/actions/workflows/validate.yml/badge.svg)](https://github.com/khainguyentien555/aims-energy-bess-reproducibility/actions/workflows/validate.yml)
+# Feeder-Constrained BESS Sizing for EV Fast-Charging Stations — Reproducibility Package
+**Code, data, and validated numerical results accompanying the published AIMS Energy article**
 
 **Associated article:**  
 **Feeder-constrained co-located BESS sizing for grid-interactive EV fast-charging stations: Branch-loading relief, voltage support, and recharge deliverability**  
